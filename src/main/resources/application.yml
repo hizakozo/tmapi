@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3399/tmapi
+    username: root
+    password: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+doma:
+  naming: SNAKE_LOWER_CASE
+  dialect: mysql
+
+#s3:
+#  access-key: photoappaccess
+#  secret-access-key: photoappsecret
+#  bucket: photoapp20200503
+#  url-template: http://127.0.0.1:19000/minio/articles/
+
+s3:
+  access-key: access
+  secret-access-key: secret
+  bucket: bucket
+  url-template: https://
