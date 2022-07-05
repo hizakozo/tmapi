@@ -17,7 +17,7 @@ services:
   redis:
     image: redis:3.2.9
     ports:
-      - "6379:6379"
+      - "6377:6379"
     container_name: 'tmapi-redis'
     networks:
       - app-net

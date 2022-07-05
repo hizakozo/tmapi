@@ -1,5 +1,7 @@
 package com.example.tmapi.domain.ticket
 
+import arrow.core.Either
+
 interface TicketGateway {
-    suspend fun find(ticketId: Number): Ticket;
+    suspend fun findByProjectId(projectId: Int): Either<Exception, List<Ticket>>;
 }
